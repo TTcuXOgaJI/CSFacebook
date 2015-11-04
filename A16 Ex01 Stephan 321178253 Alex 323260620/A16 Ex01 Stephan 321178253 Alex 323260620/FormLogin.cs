@@ -54,7 +54,7 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
                 listBoxRememberedUsers.Enabled = false;
                 isSlideMenu = false;
             }
-            //Start Size 171; 234 , Slide Size 385; 234
+            //Start Size 171; 234, Slide Size 385; 234
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
