@@ -28,112 +28,98 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.buttonSlidePanel = new System.Windows.Forms.Button();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.buttonDeletFromUsersList = new System.Windows.Forms.Button();
+            this.listBoxRememberedUsers = new System.Windows.Forms.ListBox();
+            this.checkBoxRememberNewUser = new System.Windows.Forms.CheckBox();
+            this.labelRememberedUsers = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // buttonSlidePanel
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(283, 258);
-            this.tabControl1.TabIndex = 0;
+            this.buttonSlidePanel.Location = new System.Drawing.Point(12, 5);
+            this.buttonSlidePanel.Name = "buttonSlidePanel";
+            this.buttonSlidePanel.Size = new System.Drawing.Size(132, 46);
+            this.buttonSlidePanel.TabIndex = 0;
+            this.buttonSlidePanel.Text = "Remembered Users >>";
+            this.buttonSlidePanel.UseVisualStyleBackColor = true;
+            this.buttonSlidePanel.Click += new System.EventHandler(this.buttonSlidePanel_Click);
             // 
-            // tabPage1
+            // buttonLogin
             // 
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(275, 232);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            this.buttonLogin.Location = new System.Drawing.Point(11, 103);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(133, 88);
+            this.buttonLogin.TabIndex = 1;
+            this.buttonLogin.Text = "Login";
+            this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
-            // tabPage2
+            // buttonDeletFromUsersList
             // 
-            this.tabPage2.Controls.Add(this.listBox1);
-            this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(275, 232);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.buttonDeletFromUsersList.Location = new System.Drawing.Point(176, 145);
+            this.buttonDeletFromUsersList.Name = "buttonDeletFromUsersList";
+            this.buttonDeletFromUsersList.Size = new System.Drawing.Size(184, 46);
+            this.buttonDeletFromUsersList.TabIndex = 2;
+            this.buttonDeletFromUsersList.Text = "Delete From List";
+            this.buttonDeletFromUsersList.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // listBoxRememberedUsers
             // 
-            this.button1.Location = new System.Drawing.Point(3, 162);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(269, 64);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.listBoxRememberedUsers.FormattingEnabled = true;
+            this.listBoxRememberedUsers.Location = new System.Drawing.Point(176, 31);
+            this.listBoxRememberedUsers.Name = "listBoxRememberedUsers";
+            this.listBoxRememberedUsers.Size = new System.Drawing.Size(184, 108);
+            this.listBoxRememberedUsers.TabIndex = 3;
+            this.listBoxRememberedUsers.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // button2
+            // checkBoxRememberNewUser
             // 
-            this.button2.Location = new System.Drawing.Point(4, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 81);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.checkBoxRememberNewUser.AutoSize = true;
+            this.checkBoxRememberNewUser.Location = new System.Drawing.Point(12, 80);
+            this.checkBoxRememberNewUser.Name = "checkBoxRememberNewUser";
+            this.checkBoxRememberNewUser.Size = new System.Drawing.Size(95, 17);
+            this.checkBoxRememberNewUser.TabIndex = 5;
+            this.checkBoxRememberNewUser.Text = "Remember Me";
+            this.checkBoxRememberNewUser.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // labelRememberedUsers
             // 
-            this.button3.Location = new System.Drawing.Point(4, 107);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 122);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(149, 7);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 225);
-            this.listBox1.TabIndex = 2;
+            this.labelRememberedUsers.AutoSize = true;
+            this.labelRememberedUsers.Location = new System.Drawing.Point(217, 9);
+            this.labelRememberedUsers.Name = "labelRememberedUsers";
+            this.labelRememberedUsers.Size = new System.Drawing.Size(100, 13);
+            this.labelRememberedUsers.TabIndex = 6;
+            this.labelRememberedUsers.Text = "Remembered Users";
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(155, 195);
+            this.Controls.Add(this.labelRememberedUsers);
+            this.Controls.Add(this.checkBoxRememberNewUser);
+            this.Controls.Add(this.listBoxRememberedUsers);
+            this.Controls.Add(this.buttonDeletFromUsersList);
+            this.Controls.Add(this.buttonLogin);
+            this.Controls.Add(this.buttonSlidePanel);
             this.Name = "FormLogin";
             this.Text = "Form1";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonSlidePanel;
+        private System.Windows.Forms.Button buttonLogin;
+        private System.Windows.Forms.Button buttonDeletFromUsersList;
+        private System.Windows.Forms.ListBox listBoxRememberedUsers;
+        private System.Windows.Forms.CheckBox checkBoxRememberNewUser;
+        private System.Windows.Forms.Label labelRememberedUsers;
     }
 }
 
