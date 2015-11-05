@@ -39,6 +39,7 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
                     Thread.Sleep(3);
                 }
                 isSlideMenu = true;
+
             }
 
            //Hide Slide Panel
