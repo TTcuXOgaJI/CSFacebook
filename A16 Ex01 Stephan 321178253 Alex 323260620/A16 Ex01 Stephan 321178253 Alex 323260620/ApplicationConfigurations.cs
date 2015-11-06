@@ -24,6 +24,8 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
 
         private static ApplicationConfigurations s_ThisApplicationConfigurations;
 
+        
+
 
         public static ApplicationConfigurations instanse
         {
@@ -32,11 +34,16 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
                 if (s_ThisApplicationConfigurations == null)
                 {
 
-
+                    s_ThisApplicationConfigurations = ApplicationConfigurations.LoadFromFileOrDefaultConfigurations();
                 }
 
-                return null;
+                return s_ThisApplicationConfigurations;
             }
+        }
+
+        public static ApplicationConfigurations LoadFromFileOrDefaultConfigurations()
+        {
+            return null;
         }
     }
 }
