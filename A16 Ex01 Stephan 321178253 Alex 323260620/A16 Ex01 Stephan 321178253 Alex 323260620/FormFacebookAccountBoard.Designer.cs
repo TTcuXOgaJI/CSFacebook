@@ -59,38 +59,43 @@
             // 
             // pictureBoxUserSmallPicture
             // 
-            this.pictureBoxUserSmallPicture.Location = new System.Drawing.Point(12, 49);
+            this.pictureBoxUserSmallPicture.Location = new System.Drawing.Point(16, 60);
+            this.pictureBoxUserSmallPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxUserSmallPicture.Name = "pictureBoxUserSmallPicture";
-            this.pictureBoxUserSmallPicture.Size = new System.Drawing.Size(134, 134);
+            this.pictureBoxUserSmallPicture.Size = new System.Drawing.Size(179, 165);
             this.pictureBoxUserSmallPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxUserSmallPicture.TabIndex = 0;
             this.pictureBoxUserSmallPicture.TabStop = false;
+            this.pictureBoxUserSmallPicture.Click += new System.EventHandler(this.pictureBoxUserSmallPicture_Click);
             // 
             // labelUserName
             // 
             this.labelUserName.AutoSize = true;
             this.labelUserName.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUserName.Location = new System.Drawing.Point(28, 23);
+            this.labelUserName.Location = new System.Drawing.Point(37, 28);
+            this.labelUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(108, 24);
+            this.labelUserName.Size = new System.Drawing.Size(134, 30);
             this.labelUserName.TabIndex = 1;
             this.labelUserName.Text = "User Name";
             // 
             // textBoxPostStatus
             // 
-            this.textBoxPostStatus.Location = new System.Drawing.Point(12, 208);
+            this.textBoxPostStatus.Location = new System.Drawing.Point(16, 256);
+            this.textBoxPostStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPostStatus.Multiline = true;
             this.textBoxPostStatus.Name = "textBoxPostStatus";
             this.textBoxPostStatus.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxPostStatus.Size = new System.Drawing.Size(551, 50);
+            this.textBoxPostStatus.Size = new System.Drawing.Size(733, 61);
             this.textBoxPostStatus.TabIndex = 2;
             // 
             // buttonPostStatus
             // 
             this.buttonPostStatus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPostStatus.Location = new System.Drawing.Point(569, 208);
+            this.buttonPostStatus.Location = new System.Drawing.Point(759, 256);
+            this.buttonPostStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonPostStatus.Name = "buttonPostStatus";
-            this.buttonPostStatus.Size = new System.Drawing.Size(101, 50);
+            this.buttonPostStatus.Size = new System.Drawing.Size(135, 62);
             this.buttonPostStatus.TabIndex = 3;
             this.buttonPostStatus.Text = "Post New Status";
             this.buttonPostStatus.UseVisualStyleBackColor = true;
@@ -99,18 +104,21 @@
             // listBoxFriends
             // 
             this.listBoxFriends.FormattingEnabled = true;
-            this.listBoxFriends.Location = new System.Drawing.Point(164, 49);
+            this.listBoxFriends.ItemHeight = 16;
+            this.listBoxFriends.Location = new System.Drawing.Point(219, 60);
+            this.listBoxFriends.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxFriends.Name = "listBoxFriends";
-            this.listBoxFriends.Size = new System.Drawing.Size(134, 134);
+            this.listBoxFriends.Size = new System.Drawing.Size(177, 164);
             this.listBoxFriends.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(191, 22);
+            this.label1.Location = new System.Drawing.Point(255, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 24);
+            this.label1.Size = new System.Drawing.Size(93, 30);
             this.label1.TabIndex = 5;
             this.label1.Text = "Friends";
             // 
@@ -118,9 +126,10 @@
             // 
             this.buttonShowMoreInfo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonShowMoreInfo.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonShowMoreInfo.Location = new System.Drawing.Point(12, 276);
+            this.buttonShowMoreInfo.Location = new System.Drawing.Point(16, 340);
+            this.buttonShowMoreInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonShowMoreInfo.Name = "buttonShowMoreInfo";
-            this.buttonShowMoreInfo.Size = new System.Drawing.Size(658, 26);
+            this.buttonShowMoreInfo.Size = new System.Drawing.Size(877, 32);
             this.buttonShowMoreInfo.TabIndex = 6;
             this.buttonShowMoreInfo.Text = "⇊  ⇊  ShowMoreInfo  ⇊  ⇊";
             this.buttonShowMoreInfo.UseVisualStyleBackColor = true;
@@ -130,9 +139,10 @@
             // 
             this.buttonLinkToUrl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonLinkToUrl.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLinkToUrl.Location = new System.Drawing.Point(12, 561);
+            this.buttonLinkToUrl.Location = new System.Drawing.Point(16, 690);
+            this.buttonLinkToUrl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonLinkToUrl.Name = "buttonLinkToUrl";
-            this.buttonLinkToUrl.Size = new System.Drawing.Size(75, 23);
+            this.buttonLinkToUrl.Size = new System.Drawing.Size(100, 28);
             this.buttonLinkToUrl.TabIndex = 8;
             this.buttonLinkToUrl.Text = "button1";
             this.buttonLinkToUrl.UseVisualStyleBackColor = true;
@@ -141,9 +151,10 @@
             // 
             this.buttonCommits.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonCommits.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCommits.Location = new System.Drawing.Point(119, 561);
+            this.buttonCommits.Location = new System.Drawing.Point(159, 690);
+            this.buttonCommits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCommits.Name = "buttonCommits";
-            this.buttonCommits.Size = new System.Drawing.Size(75, 23);
+            this.buttonCommits.Size = new System.Drawing.Size(100, 28);
             this.buttonCommits.TabIndex = 9;
             this.buttonCommits.Text = "button2";
             this.buttonCommits.UseVisualStyleBackColor = true;
@@ -152,9 +163,10 @@
             // 
             this.buttonCloseTab.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonCloseTab.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCloseTab.Location = new System.Drawing.Point(591, 561);
+            this.buttonCloseTab.Location = new System.Drawing.Point(788, 690);
+            this.buttonCloseTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCloseTab.Name = "buttonCloseTab";
-            this.buttonCloseTab.Size = new System.Drawing.Size(75, 23);
+            this.buttonCloseTab.Size = new System.Drawing.Size(100, 28);
             this.buttonCloseTab.TabIndex = 10;
             this.buttonCloseTab.Text = "button3";
             this.buttonCloseTab.UseVisualStyleBackColor = true;
@@ -166,9 +178,11 @@
             this.groupBoxFFilters.Controls.Add(this.textBox2);
             this.groupBoxFFilters.Controls.Add(this.textBox1);
             this.groupBoxFFilters.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxFFilters.Location = new System.Drawing.Point(12, 308);
+            this.groupBoxFFilters.Location = new System.Drawing.Point(16, 379);
+            this.groupBoxFFilters.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxFFilters.Name = "groupBoxFFilters";
-            this.groupBoxFFilters.Size = new System.Drawing.Size(500, 60);
+            this.groupBoxFFilters.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxFFilters.Size = new System.Drawing.Size(667, 74);
             this.groupBoxFFilters.TabIndex = 11;
             this.groupBoxFFilters.TabStop = false;
             this.groupBoxFFilters.Text = "Filters";
@@ -177,9 +191,10 @@
             // 
             this.labelContentFilter.AutoSize = true;
             this.labelContentFilter.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelContentFilter.Location = new System.Drawing.Point(225, 41);
+            this.labelContentFilter.Location = new System.Drawing.Point(300, 50);
+            this.labelContentFilter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelContentFilter.Name = "labelContentFilter";
-            this.labelContentFilter.Size = new System.Drawing.Size(53, 13);
+            this.labelContentFilter.Size = new System.Drawing.Size(67, 17);
             this.labelContentFilter.TabIndex = 3;
             this.labelContentFilter.Text = "Content :";
             // 
@@ -187,33 +202,37 @@
             // 
             this.labelNameFilter.AutoSize = true;
             this.labelNameFilter.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameFilter.Location = new System.Drawing.Point(6, 41);
+            this.labelNameFilter.Location = new System.Drawing.Point(8, 50);
+            this.labelNameFilter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNameFilter.Name = "labelNameFilter";
-            this.labelNameFilter.Size = new System.Drawing.Size(63, 13);
+            this.labelNameFilter.Size = new System.Drawing.Size(79, 17);
             this.labelNameFilter.TabIndex = 2;
             this.labelNameFilter.Text = "UserName :";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(281, 34);
+            this.textBox2.Location = new System.Drawing.Point(375, 42);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 21);
+            this.textBox2.Size = new System.Drawing.Size(283, 24);
             this.textBox2.TabIndex = 1;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(75, 35);
+            this.textBox1.Location = new System.Drawing.Point(100, 43);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 21);
+            this.textBox1.Size = new System.Drawing.Size(191, 24);
             this.textBox1.TabIndex = 0;
             // 
             // buttonRefreshTable
             // 
             this.buttonRefreshTable.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonRefreshTable.Location = new System.Drawing.Point(518, 308);
+            this.buttonRefreshTable.Location = new System.Drawing.Point(691, 379);
+            this.buttonRefreshTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonRefreshTable.Name = "buttonRefreshTable";
-            this.buttonRefreshTable.Size = new System.Drawing.Size(147, 59);
+            this.buttonRefreshTable.Size = new System.Drawing.Size(196, 73);
             this.buttonRefreshTable.TabIndex = 12;
             this.buttonRefreshTable.Text = "Refresh";
             this.buttonRefreshTable.UseVisualStyleBackColor = true;
@@ -221,27 +240,31 @@
             // listBoxCheckIns
             // 
             this.listBoxCheckIns.FormattingEnabled = true;
-            this.listBoxCheckIns.Location = new System.Drawing.Point(305, 49);
+            this.listBoxCheckIns.ItemHeight = 16;
+            this.listBoxCheckIns.Location = new System.Drawing.Point(407, 60);
+            this.listBoxCheckIns.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxCheckIns.Name = "listBoxCheckIns";
-            this.listBoxCheckIns.Size = new System.Drawing.Size(158, 134);
+            this.listBoxCheckIns.Size = new System.Drawing.Size(209, 164);
             this.listBoxCheckIns.TabIndex = 13;
             // 
             // labelCheckIns
             // 
             this.labelCheckIns.AutoSize = true;
             this.labelCheckIns.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCheckIns.Location = new System.Drawing.Point(344, 21);
+            this.labelCheckIns.Location = new System.Drawing.Point(459, 26);
+            this.labelCheckIns.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCheckIns.Name = "labelCheckIns";
-            this.labelCheckIns.Size = new System.Drawing.Size(88, 24);
+            this.labelCheckIns.Size = new System.Drawing.Size(110, 30);
             this.labelCheckIns.TabIndex = 14;
             this.labelCheckIns.Text = "Checkins";
             // 
             // tabPageEvents
             // 
-            this.tabPageEvents.Location = new System.Drawing.Point(4, 22);
+            this.tabPageEvents.Location = new System.Drawing.Point(4, 26);
+            this.tabPageEvents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageEvents.Name = "tabPageEvents";
-            this.tabPageEvents.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageEvents.Size = new System.Drawing.Size(650, 156);
+            this.tabPageEvents.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageEvents.Size = new System.Drawing.Size(869, 194);
             this.tabPageEvents.TabIndex = 0;
             this.tabPageEvents.Text = "Events";
             this.tabPageEvents.UseVisualStyleBackColor = true;
@@ -249,10 +272,11 @@
             // tabPagePosts
             // 
             this.tabPagePosts.Controls.Add(this.dataGridViewPosts);
-            this.tabPagePosts.Location = new System.Drawing.Point(4, 22);
+            this.tabPagePosts.Location = new System.Drawing.Point(4, 26);
+            this.tabPagePosts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPagePosts.Name = "tabPagePosts";
-            this.tabPagePosts.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePosts.Size = new System.Drawing.Size(650, 156);
+            this.tabPagePosts.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPagePosts.Size = new System.Drawing.Size(869, 194);
             this.tabPagePosts.TabIndex = 2;
             this.tabPagePosts.Text = "Posts";
             this.tabPagePosts.UseVisualStyleBackColor = true;
@@ -263,11 +287,12 @@
             this.dataGridViewPosts.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewPosts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPosts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewPosts.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewPosts.Location = new System.Drawing.Point(4, 4);
+            this.dataGridViewPosts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewPosts.MultiSelect = false;
             this.dataGridViewPosts.Name = "dataGridViewPosts";
             this.dataGridViewPosts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewPosts.Size = new System.Drawing.Size(644, 150);
+            this.dataGridViewPosts.Size = new System.Drawing.Size(861, 186);
             this.dataGridViewPosts.TabIndex = 1;
             this.dataGridViewPosts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPosts_CellContentClick);
             // 
@@ -276,18 +301,19 @@
             this.tabControlAllNews.Controls.Add(this.tabPagePosts);
             this.tabControlAllNews.Controls.Add(this.tabPageEvents);
             this.tabControlAllNews.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlAllNews.Location = new System.Drawing.Point(12, 373);
+            this.tabControlAllNews.Location = new System.Drawing.Point(16, 459);
+            this.tabControlAllNews.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControlAllNews.Name = "tabControlAllNews";
             this.tabControlAllNews.SelectedIndex = 0;
-            this.tabControlAllNews.Size = new System.Drawing.Size(658, 182);
+            this.tabControlAllNews.Size = new System.Drawing.Size(877, 224);
             this.tabControlAllNews.TabIndex = 7;
             this.tabControlAllNews.SelectedIndexChanged += new System.EventHandler(this.tabControlAllNews_SelectedIndexChanged);
             // 
             // FormFacebookAccountBoard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 306);
+            this.ClientSize = new System.Drawing.Size(909, 377);
             this.Controls.Add(this.labelCheckIns);
             this.Controls.Add(this.listBoxCheckIns);
             this.Controls.Add(this.buttonRefreshTable);
@@ -303,6 +329,7 @@
             this.Controls.Add(this.textBoxPostStatus);
             this.Controls.Add(this.labelUserName);
             this.Controls.Add(this.pictureBoxUserSmallPicture);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormFacebookAccountBoard";
             this.Text = "FormFacebookAccountBoard";
             this.Load += new System.EventHandler(this.FormFacebookAccountBoard_Load);

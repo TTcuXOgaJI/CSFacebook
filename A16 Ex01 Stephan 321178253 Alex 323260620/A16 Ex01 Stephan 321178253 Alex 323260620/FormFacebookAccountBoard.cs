@@ -136,5 +136,13 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
         {
 
         }
+
+        private void pictureBoxUserSmallPicture_Click(object sender, EventArgs e)
+        {
+            if(true)
+            {
+
+            }
+        }
     }
 }
