@@ -13,9 +13,9 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
         {
 
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
 
         }
 
@@ -26,7 +26,7 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
             {
                 buttonDeletFromUsersList.Enabled = true;
                 listBoxRememberedUsers.Enabled = true;
-                for (int i = 171; i <= 385; i++)
+                for (int i = 171; i <= 385; i+=3)
                 {
                     this.Width = i;
                     buttonDeletFromUsersList.Refresh();
@@ -42,7 +42,7 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
             else if (isSlideMenu == true)
             {
 
-                for (int i = 385; i >= 171; i--)
+                for (int i = 385; i >= 171; i-=3)
                 {
                     this.Width = i;
                    // Thread.Sleep(2);

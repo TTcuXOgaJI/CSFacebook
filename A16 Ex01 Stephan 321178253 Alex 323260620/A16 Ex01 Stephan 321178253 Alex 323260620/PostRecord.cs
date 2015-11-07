@@ -17,6 +17,7 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
             r_Post = i_Post;
         }
 
+
         //public Post getPost
         //{
         //    get
