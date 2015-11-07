@@ -1,12 +1,7 @@
-﻿using System;
+﻿using FacebookWrapper.ObjectModel;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.Threading;
 
 namespace A16_Ex01_Stephan_321178253_Alex_323260620
 {
@@ -16,6 +11,7 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
 
         public FormLogin()
         {
+
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -36,7 +32,7 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
                     buttonDeletFromUsersList.Refresh();
                     listBoxRememberedUsers.Refresh();
                     labelRememberedUsers.Refresh();
-                    Thread.Sleep(3);
+                   // Thread.Sleep(2);
                 }
                 isSlideMenu = true;
 
@@ -49,7 +45,7 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
                 for (int i = 385; i >= 171; i--)
                 {
                     this.Width = i;
-                    Thread.Sleep(3);
+                   // Thread.Sleep(2);
                 }
                 buttonDeletFromUsersList.Enabled = false;
                 listBoxRememberedUsers.Enabled = false;
@@ -81,11 +77,10 @@ namespace A16_Ex01_Stephan_321178253_Alex_323260620
 
         private void swapLoginFormToAccountBoardForm(Form formAccountBoard)
         {
-
-            this.Hide();
-            formAccountBoard.ShowDialog();
-            this.Show();
-            FacebookServiceSession.Logout();
+             this.Hide();
+             formAccountBoard.ShowDialog();
+             this.Show();
+             FacebookServiceSession.Logout();
         }
     }
 }

@@ -35,11 +35,6 @@
             this.listBoxFriends = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonShowMoreInfo = new System.Windows.Forms.Button();
-            this.tabControlAllNews = new System.Windows.Forms.TabControl();
-            this.tabPageEvents = new System.Windows.Forms.TabPage();
-            this.tabPagePosts = new System.Windows.Forms.TabPage();
-            this.dataGridViewPosts = new System.Windows.Forms.DataGridView();
-            this.tabPageNews = new System.Windows.Forms.TabPage();
             this.buttonLinkToUrl = new System.Windows.Forms.Button();
             this.buttonCommits = new System.Windows.Forms.Button();
             this.buttonCloseTab = new System.Windows.Forms.Button();
@@ -51,11 +46,15 @@
             this.buttonRefreshTable = new System.Windows.Forms.Button();
             this.listBoxCheckIns = new System.Windows.Forms.ListBox();
             this.labelCheckIns = new System.Windows.Forms.Label();
+            this.tabPageEvents = new System.Windows.Forms.TabPage();
+            this.tabPagePosts = new System.Windows.Forms.TabPage();
+            this.dataGridViewPosts = new System.Windows.Forms.DataGridView();
+            this.tabControlAllNews = new System.Windows.Forms.TabControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserSmallPicture)).BeginInit();
-            this.tabControlAllNews.SuspendLayout();
+            this.groupBoxFFilters.SuspendLayout();
             this.tabPagePosts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPosts)).BeginInit();
-            this.groupBoxFFilters.SuspendLayout();
+            this.tabControlAllNews.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBoxUserSmallPicture
@@ -126,63 +125,6 @@
             this.buttonShowMoreInfo.Text = "⇊  ⇊  ShowMoreInfo  ⇊  ⇊";
             this.buttonShowMoreInfo.UseVisualStyleBackColor = true;
             this.buttonShowMoreInfo.Click += new System.EventHandler(this.buttonShowMoreInfo_Click);
-            // 
-            // tabControlAllNews
-            // 
-            this.tabControlAllNews.Controls.Add(this.tabPageEvents);
-            this.tabControlAllNews.Controls.Add(this.tabPagePosts);
-            this.tabControlAllNews.Controls.Add(this.tabPageNews);
-            this.tabControlAllNews.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlAllNews.Location = new System.Drawing.Point(12, 373);
-            this.tabControlAllNews.Name = "tabControlAllNews";
-            this.tabControlAllNews.SelectedIndex = 0;
-            this.tabControlAllNews.Size = new System.Drawing.Size(658, 182);
-            this.tabControlAllNews.TabIndex = 7;
-            this.tabControlAllNews.SelectedIndexChanged += new System.EventHandler(this.tabControlAllNews_SelectedIndexChanged);
-            // 
-            // tabPageEvents
-            // 
-            this.tabPageEvents.Location = new System.Drawing.Point(4, 22);
-            this.tabPageEvents.Name = "tabPageEvents";
-            this.tabPageEvents.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageEvents.Size = new System.Drawing.Size(650, 156);
-            this.tabPageEvents.TabIndex = 0;
-            this.tabPageEvents.Text = "Events";
-            this.tabPageEvents.UseVisualStyleBackColor = true;
-            // 
-            // tabPagePosts
-            // 
-            this.tabPagePosts.Controls.Add(this.dataGridViewPosts);
-            this.tabPagePosts.Location = new System.Drawing.Point(4, 22);
-            this.tabPagePosts.Name = "tabPagePosts";
-            this.tabPagePosts.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePosts.Size = new System.Drawing.Size(650, 156);
-            this.tabPagePosts.TabIndex = 2;
-            this.tabPagePosts.Text = "Posts";
-            this.tabPagePosts.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewPosts
-            // 
-            this.dataGridViewPosts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewPosts.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridViewPosts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPosts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewPosts.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewPosts.MultiSelect = false;
-            this.dataGridViewPosts.Name = "dataGridViewPosts";
-            this.dataGridViewPosts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewPosts.Size = new System.Drawing.Size(644, 150);
-            this.dataGridViewPosts.TabIndex = 1;
-            // 
-            // tabPageNews
-            // 
-            this.tabPageNews.Location = new System.Drawing.Point(4, 22);
-            this.tabPageNews.Name = "tabPageNews";
-            this.tabPageNews.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageNews.Size = new System.Drawing.Size(650, 156);
-            this.tabPageNews.TabIndex = 3;
-            this.tabPageNews.Text = "News";
-            this.tabPageNews.UseVisualStyleBackColor = true;
             // 
             // buttonLinkToUrl
             // 
@@ -294,6 +236,53 @@
             this.labelCheckIns.TabIndex = 14;
             this.labelCheckIns.Text = "Checkins";
             // 
+            // tabPageEvents
+            // 
+            this.tabPageEvents.Location = new System.Drawing.Point(4, 22);
+            this.tabPageEvents.Name = "tabPageEvents";
+            this.tabPageEvents.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageEvents.Size = new System.Drawing.Size(650, 156);
+            this.tabPageEvents.TabIndex = 0;
+            this.tabPageEvents.Text = "Events";
+            this.tabPageEvents.UseVisualStyleBackColor = true;
+            // 
+            // tabPagePosts
+            // 
+            this.tabPagePosts.Controls.Add(this.dataGridViewPosts);
+            this.tabPagePosts.Location = new System.Drawing.Point(4, 22);
+            this.tabPagePosts.Name = "tabPagePosts";
+            this.tabPagePosts.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPagePosts.Size = new System.Drawing.Size(650, 156);
+            this.tabPagePosts.TabIndex = 2;
+            this.tabPagePosts.Text = "Posts";
+            this.tabPagePosts.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewPosts
+            // 
+            this.dataGridViewPosts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewPosts.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewPosts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPosts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewPosts.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewPosts.MultiSelect = false;
+            this.dataGridViewPosts.Name = "dataGridViewPosts";
+            this.dataGridViewPosts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewPosts.Size = new System.Drawing.Size(644, 150);
+            this.dataGridViewPosts.TabIndex = 1;
+            this.dataGridViewPosts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPosts_CellContentClick);
+            // 
+            // tabControlAllNews
+            // 
+            this.tabControlAllNews.Controls.Add(this.tabPagePosts);
+            this.tabControlAllNews.Controls.Add(this.tabPageEvents);
+            this.tabControlAllNews.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlAllNews.Location = new System.Drawing.Point(12, 373);
+            this.tabControlAllNews.Name = "tabControlAllNews";
+            this.tabControlAllNews.SelectedIndex = 0;
+            this.tabControlAllNews.Size = new System.Drawing.Size(658, 182);
+            this.tabControlAllNews.TabIndex = 7;
+            this.tabControlAllNews.SelectedIndexChanged += new System.EventHandler(this.tabControlAllNews_SelectedIndexChanged);
+            // 
             // FormFacebookAccountBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,11 +307,11 @@
             this.Text = "FormFacebookAccountBoard";
             this.Load += new System.EventHandler(this.FormFacebookAccountBoard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserSmallPicture)).EndInit();
-            this.tabControlAllNews.ResumeLayout(false);
-            this.tabPagePosts.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPosts)).EndInit();
             this.groupBoxFFilters.ResumeLayout(false);
             this.groupBoxFFilters.PerformLayout();
+            this.tabPagePosts.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPosts)).EndInit();
+            this.tabControlAllNews.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -337,10 +326,6 @@
         private System.Windows.Forms.ListBox listBoxFriends;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonShowMoreInfo;
-        private System.Windows.Forms.TabControl tabControlAllNews;
-        private System.Windows.Forms.TabPage tabPageEvents;
-        private System.Windows.Forms.TabPage tabPagePosts;
-        private System.Windows.Forms.TabPage tabPageNews;
         private System.Windows.Forms.Button buttonLinkToUrl;
         private System.Windows.Forms.Button buttonCommits;
         private System.Windows.Forms.Button buttonCloseTab;
@@ -350,8 +335,11 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button buttonRefreshTable;
-        private System.Windows.Forms.DataGridView dataGridViewPosts;
         private System.Windows.Forms.ListBox listBoxCheckIns;
         private System.Windows.Forms.Label labelCheckIns;
+        private System.Windows.Forms.TabPage tabPageEvents;
+        private System.Windows.Forms.TabPage tabPagePosts;
+        private System.Windows.Forms.DataGridView dataGridViewPosts;
+        private System.Windows.Forms.TabControl tabControlAllNews;
     }
 }
